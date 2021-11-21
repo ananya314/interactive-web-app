@@ -54,6 +54,8 @@ df = pd.DataFrame(X, columns = col_names)
 
 
 if EDA:
+    X, y, col_names = get_dataset(dataset_name)
+    df = pd.DataFrame(X, columns = col_names)
     st.write("""**Shape of dataset:**""", X.shape)
     st.write("**Number of classes:**", len(np.unique(y)))
     
