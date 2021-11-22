@@ -37,9 +37,9 @@ EDA = st.sidebar.checkbox('Show EDA')
 
 def get_dataset(dataset_name):
 
-    if dataset_name == "Iris":
+    if dataset_name == "Iris Dataset":
         data = datasets.load_iris()
-    elif dataset_name ==  "Breast Cancer":
+    elif dataset_name ==  "Breast Cancer Dataset":
         data = datasets.load_breast_cancer()
     else:
         data = datasets.load_wine()
